@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IBS_Intra_App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ee90ce955fb045c06e08e67187016926183764df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("IBS_Intra_App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IBS_Intra_App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

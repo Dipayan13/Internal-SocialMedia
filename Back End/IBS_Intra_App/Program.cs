@@ -1,121 +1,3 @@
-//////without serilog
-
-//using IBS_Intra_App.DAL.Context;
-//using IBS_Intra_App.DAL.Models;
-//using IBS_Intra_App.DAL.Implementation;
-//using IBS_Intra_App.BLL.Service;
-//using IBS_Intra_App.Interface;
-//using Microsoft.AspNetCore.Authentication.JwtBearer;
-//using Microsoft.AspNetCore.Identity;
-//using Microsoft.EntityFrameworkCore;
-//using Microsoft.Extensions.Configuration;
-//using Microsoft.IdentityModel.Tokens;
-//using Microsoft.OpenApi.Models;
-//using System.Text;
-//using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-//using Microsoft.Extensions.FileProviders;
-//using Serilog;
-
-//var builder = WebApplication.CreateBuilder(args);
-//builder.Services.AddControllers();
-//builder.Services.AddEndpointsApiExplorer();
-
-//builder.Services.AddSwaggerGen(option =>
-//    option.AddSecurityRequirement(new OpenApiSecurityRequirement
-//     {
-//         {
-//               new OpenApiSecurityScheme
-//                 {
-//                     Reference = new OpenApiReference
-//                     {
-//                         Type = ReferenceType.SecurityScheme,
-//                         Id = "Bearer"
-//                     }
-//                 },
-//                 new string[] {}
-//         }
-//     }
-//    ));
-////adding cors
-//builder.Services.AddCors(options =>
-//    options.AddPolicy("Mypolicy", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()));
-
-
-////idenityDbContext
-//builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite(
-//    builder.Configuration.GetConnectionString("DefaultConnection")));
-
-////identity
-//builder.Services.AddIdentity<User, IdentityRole>()
-//    .AddDefaultTokenProviders()
-//    .AddEntityFrameworkStores<ApplicationDbContext>();
-
-////authentication usign jwt, refresh token stuff also there
-//builder.Services.AddAuthentication(x =>
-//{
-//    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-//    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-//}).AddJwtBearer(o =>
-//{
-//    var Key = Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]);
-//    o.SaveToken = true;
-//    o.TokenValidationParameters = new TokenValidationParameters
-//    {
-//        ValidateIssuer = false, // on production make it true
-//        ValidateAudience = false, // on production make it true
-//        ValidateLifetime = true,
-//        ValidateIssuerSigningKey = true,
-//        ValidIssuer = builder.Configuration["JWT:Issuer"],
-//        ValidAudience = builder.Configuration["JWT:Audience"],
-//        IssuerSigningKey = new SymmetricSecurityKey(Key),
-//        ClockSkew = TimeSpan.Zero
-//    };
-//    o.Events = new JwtBearerEvents
-//    {
-//        OnAuthenticationFailed = context =>
-//        {
-//            if (context.Exception.GetType() == typeof(SecurityTokenExpiredException))
-//            {
-//                context.Response.Headers.Add("IS-TOKEN-EXPIRED", "true");
-//            }
-//            return Task.CompletedTask;
-//        }
-//    };
-//});
-
-
-////dependency injection
-//builder.Services.AddScoped<IAppService, AppService>();
-//builder.Services.AddScoped<IAppImplementation, AppImplementation>();
-
-//builder.Services.AddSingleton<IWebHostEnvironment>(builder.Environment);
-
-//var app = builder.Build();
-
-//// Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-//    app.UseSwagger();
-//    app.UseSwaggerUI();
-//}
-
-//app.UseStaticFiles(new StaticFileOptions
-//{
-//    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "StaticFiles")),
-//    RequestPath = "/StaticFiles"
-//});
-//app.UseHttpsRedirection();
-//app.UseCors("Mypolicy"); // For CROS issuse , to accept any client 
-//app.UseAuthentication(); // This need to be added before UseAuthorization()	
-//app.UseAuthorization();
-
-//app.MapControllers();
-//app.Run();
-
-
-
-
-//using Serilog;
 using IBS_Intra_App.DAL.Context;
 using IBS_Intra_App.DAL.Models;
 using IBS_Intra_App.DAL.Implementation;
@@ -192,7 +74,7 @@ try
         .AddDefaultTokenProviders()
         .AddEntityFrameworkStores<ApplicationDbContext>();
 
-    //authentication usign jwt, refresh token stuff also there
+    //authentication usign jwt, refresh token 
     builder.Services.AddAuthentication(x =>
     {
         x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -203,8 +85,8 @@ try
         o.SaveToken = true;
         o.TokenValidationParameters = new TokenValidationParameters
         {
-            ValidateIssuer = false, // on production make it true
-            ValidateAudience = false, // on production make it true
+            ValidateIssuer = false, 
+            ValidateAudience = false,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
             ValidIssuer = builder.Configuration["JWT:Issuer"],
