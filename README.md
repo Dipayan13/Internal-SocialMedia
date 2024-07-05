@@ -17,8 +17,6 @@ This project is an internal social media application designed for use within an 
 
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/) installed on your machine
