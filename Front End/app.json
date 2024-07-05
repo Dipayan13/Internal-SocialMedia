@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "icon": "./assets/mdpi.png",
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "name": "social-app",
+    "slug": "react_native",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "8c51a535-5096-422d-8e71-6a0f2503540d"
+      }
+    },
+    "owner": "dipayan",
+    "android": {
+      "package": "com.dipayan.react_native"
+    },
+    "ios": {
+      "bundleIdentifier": "com.dipayan.reactnative"
+    }
+  }
+}

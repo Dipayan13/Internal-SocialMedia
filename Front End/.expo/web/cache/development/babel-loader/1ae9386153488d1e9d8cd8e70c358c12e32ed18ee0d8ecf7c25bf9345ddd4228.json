@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default \"sync\";","map":{"version":3,"names":[],"sources":["D:/Ibs app frontend/IBS-Intra-Frontend/react_native - Copy (2)/node_modules/expo-router/src/import-mode/index.web.ts"],"sourcesContent":["export default process.env.EXPO_ROUTER_IMPORT_MODE_WEB;\n"],"mappings":"AAAA"},"metadata":{},"sourceType":"module","externalDependencies":[]}

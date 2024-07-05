@@ -1,0 +1,150 @@
+2023-09-21 11:09:23.979 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-21 11:09:24.646 [INF] Now listening on: https://localhost:7036
+2023-09-21 11:09:24.648 [INF] Now listening on: http://localhost:5253
+2023-09-21 11:09:24.664 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-21 11:09:24.669 [INF] Hosting environment: Development
+2023-09-21 11:09:24.672 [INF] Content root path: D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\
+2023-09-21 11:09:25.849 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/index.html - -
+2023-09-21 11:09:27.031 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/index.html - - - 200 - text/html;charset=utf-8 1182.2951ms
+2023-09-21 11:09:27.034 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2023-09-21 11:09:27.034 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2023-09-21 11:09:27.057 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 23.1129ms
+2023-09-21 11:09:27.230 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 196.2840ms
+2023-09-21 11:09:27.361 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - -
+2023-09-21 11:09:27.741 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 380.0621ms
+2023-09-21 11:10:29.130 [INF] Application Starting.
+2023-09-21 11:10:29.268 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-21 11:10:29.621 [INF] Now listening on: https://localhost:7036
+2023-09-21 11:10:29.623 [INF] Now listening on: http://localhost:5253
+2023-09-21 11:10:29.633 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-21 11:10:29.638 [INF] Hosting environment: Development
+2023-09-21 11:10:29.640 [INF] Content root path: D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\
+2023-09-21 11:10:30.415 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/index.html - -
+2023-09-21 11:10:31.193 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2023-09-21 11:10:31.204 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2023-09-21 11:10:31.232 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 34.8526ms
+2023-09-21 11:10:31.236 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/index.html - - - 200 - text/html;charset=utf-8 827.3379ms
+2023-09-21 11:10:31.346 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 142.4832ms
+2023-09-21 11:10:31.439 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - -
+2023-09-21 11:10:31.782 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 342.7430ms
+2023-09-21 11:12:54.958 [INF] Request starting HTTP/2 POST https://localhost:7036/App/login application/json 50
+2023-09-21 11:12:54.970 [INF] CORS policy execution successful.
+2023-09-21 11:12:55.135 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App)'
+2023-09-21 11:12:55.187 [INF] Route matched with {action = "Login", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(IBS_Intra_App.BLL.DTO.LoginRequestModel) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2023-09-21 11:12:57.093 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2023-09-21 11:12:58.265 [INF] Executed DbCommand (39ms) [Parameters=[@__normalizedUserName_0='?' (Size = 3)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DOB", "a"."DOJ", "a"."Eid", "a"."Email", "a"."EmailConfirmed", "a"."Emp_Name", "a"."Image", "a"."LinkedIn", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."Nick_Name", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PMail", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName", "a"."WMail", "a"."WhatsApp"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-21 11:12:58.489 [INF] tttttttttttttttttttttttttttttttttttttttttttttttttttt
+2023-09-21 11:12:58.846 [INF] Executed DbCommand (14ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-09-21 11:12:58.940 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-21 11:12:58.956 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 4)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2023-09-21 11:12:59.022 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE "a"."RoleId" = @__role_Id_0
+2023-09-21 11:12:59.057 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-09-21 11:12:59.069 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-21 11:12:59.376 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-09-21 11:12:59.393 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType6`3[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-21 11:12:59.425 [INF] Executed action IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App) in 4226.8608ms
+2023-09-21 11:12:59.425 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App)'
+2023-09-21 11:12:59.455 [INF] Request finished HTTP/2 POST https://localhost:7036/App/login application/json 50 - 200 - application/json;+charset=utf-8 4496.8050ms
+2023-09-21 16:56:16.012 [INF] Application Starting.
+2023-09-21 16:56:16.208 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-21 16:56:16.657 [INF] Now listening on: https://localhost:7036
+2023-09-21 16:56:16.660 [INF] Now listening on: http://localhost:5253
+2023-09-21 16:56:16.697 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-21 16:56:16.810 [INF] Hosting environment: Development
+2023-09-21 16:56:16.862 [INF] Content root path: D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\
+2023-09-21 16:56:17.844 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/index.html - -
+2023-09-21 16:56:18.995 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2023-09-21 16:56:19.001 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/index.html - - - 200 - text/html;charset=utf-8 1168.4028ms
+2023-09-21 16:56:19.006 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2023-09-21 16:56:19.019 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 24.7315ms
+2023-09-21 16:56:19.112 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 106.4648ms
+2023-09-21 16:56:19.460 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - -
+2023-09-21 16:56:19.921 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 460.8906ms
+2023-09-21 17:04:09.169 [INF] Application Starting.
+2023-09-21 17:04:09.359 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-21 17:04:09.784 [INF] Now listening on: https://localhost:7036
+2023-09-21 17:04:09.789 [INF] Now listening on: http://localhost:5253
+2023-09-21 17:04:09.815 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-21 17:04:09.830 [INF] Hosting environment: Development
+2023-09-21 17:04:09.835 [INF] Content root path: D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\
+2023-09-21 17:04:10.542 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/index.html - -
+2023-09-21 17:04:11.484 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2023-09-21 17:04:11.484 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2023-09-21 17:04:11.511 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/index.html - - - 200 - text/html;charset=utf-8 985.9885ms
+2023-09-21 17:04:11.536 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 51.8436ms
+2023-09-21 17:04:11.565 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 80.1093ms
+2023-09-21 17:04:11.955 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - -
+2023-09-21 17:04:12.280 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 324.5806ms
+2023-09-21 17:04:52.280 [INF] Request starting HTTP/2 POST https://localhost:7036/App/login application/json 50
+2023-09-21 17:04:52.300 [INF] Request received: POST /App/login from ::1 at 21-09-2023 11:34:52
+2023-09-21 17:04:52.308 [INF] CORS policy execution successful.
+2023-09-21 17:04:52.469 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App)'
+2023-09-21 17:04:52.535 [INF] Route matched with {action = "Login", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(IBS_Intra_App.BLL.DTO.LoginRequestModel) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2023-09-21 17:04:54.622 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2023-09-21 17:04:55.817 [INF] Executed DbCommand (34ms) [Parameters=[@__normalizedUserName_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DOB", "a"."DOJ", "a"."Eid", "a"."Email", "a"."EmailConfirmed", "a"."Emp_Name", "a"."Image", "a"."LinkedIn", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."Nick_Name", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PMail", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName", "a"."WMail", "a"."WhatsApp"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-21 17:04:55.861 [INF] User Found
+2023-09-21 17:04:55.877 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-21 17:04:55.937 [INF] Executed action IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App) in 3381.5496ms
+2023-09-21 17:04:55.940 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App)'
+2023-09-21 17:04:55.943 [INF] Response sent: 200 (IsSuccess: 200)
+2023-09-21 17:04:55.977 [INF] Request finished HTTP/2 POST https://localhost:7036/App/login application/json 50 - 200 0 application/json;+charset=utf-8 3696.6063ms
+2023-09-21 17:06:50.079 [INF] Application Starting.
+2023-09-21 17:06:50.353 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-21 17:06:50.799 [INF] Now listening on: https://localhost:7036
+2023-09-21 17:06:50.804 [INF] Now listening on: http://localhost:5253
+2023-09-21 17:06:50.823 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-21 17:06:50.829 [INF] Hosting environment: Development
+2023-09-21 17:06:50.832 [INF] Content root path: D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\
+2023-09-21 17:06:52.106 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/index.html - -
+2023-09-21 17:06:52.898 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2023-09-21 17:06:52.926 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/index.html - - - 200 - text/html;charset=utf-8 821.5723ms
+2023-09-21 17:06:52.927 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2023-09-21 17:06:52.929 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 30.7105ms
+2023-09-21 17:06:53.018 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 90.6326ms
+2023-09-21 17:06:53.139 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - -
+2023-09-21 17:06:53.516 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 376.8916ms
+2023-09-21 17:07:01.872 [INF] Request starting HTTP/2 POST https://localhost:7036/App/login application/json 50
+2023-09-21 17:07:01.892 [INF] CORS policy execution successful.
+2023-09-21 17:07:02.031 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App)'
+2023-09-21 17:07:02.106 [INF] Route matched with {action = "Login", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(IBS_Intra_App.BLL.DTO.LoginRequestModel) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2023-09-21 17:07:04.191 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2023-09-21 17:07:05.245 [INF] Executed DbCommand (26ms) [Parameters=[@__normalizedUserName_0='?' (Size = 6)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DOB", "a"."DOJ", "a"."Eid", "a"."Email", "a"."EmailConfirmed", "a"."Emp_Name", "a"."Image", "a"."LinkedIn", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."Nick_Name", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PMail", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName", "a"."WMail", "a"."WhatsApp"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-09-21 17:07:05.304 [INF] User Found
+2023-09-21 17:07:05.321 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-09-21 17:07:05.355 [INF] Executed action IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App) in 3233.3382ms
+2023-09-21 17:07:05.357 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App)'
+2023-09-21 17:07:05.376 [INF] Request finished HTTP/2 POST https://localhost:7036/App/login application/json 50 - 200 - application/json;+charset=utf-8 3503.8792ms

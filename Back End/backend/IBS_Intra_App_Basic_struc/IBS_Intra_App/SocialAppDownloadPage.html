@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBS Social App Download</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('D:/Social App Download Page/assets/Background.jpeg/');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+        }
+
+        .download-btn {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .how-to-download {
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .app-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .beta-version {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .features-link {
+            color: #007bff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .read-more {
+            font-size: 14px;
+            color: purple;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .header {
+            background-color: #cfe8ff; /* Pastel Blue */
+            padding: 10px;
+            color: #333; /* Dark Text Color */
+            text-align: center;
+            position: relative; /* Ensure relative positioning for absolute child */
+        }
+
+        .header h1 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Discover IBS Social</h1>
+    </div>
+
+    <div class="container text-center">
+        <!-- How to Download Link -->
+        <div class="how-to-download" data-toggle="modal" data-target="#howToDownloadModal">How to Download?</div>
+        <h1 class="app-name">IBS Social App Download</h1>
+        <p>Experience the Beta Version. <a href="#" class="features-link" data-toggle="modal" data-target="#featuresModal">Learn more</a> about the features.</p>
+        <!-- APK Download Button -->
+        <a href="https://bit.ly/ibs-social-app" class="btn btn-primary btn-lg download-btn" download>Download for Android</a>
+
+        <!-- iOS Download Button (Initially Disabled) -->
+        <button class="btn btn-secondary btn-lg download-btn" disabled>Download for iOS</button>
+    </div>
+
+    <!-- Download Modal -->
+    <div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="downloadModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="downloadModalLabel">App Download</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-left">
+                    <p>Click the button below to start downloading the APK file:</p>
+                    <a href="path/to/your/app.apk" class="btn btn-primary btn-lg download-btn" download>Download APK</a>
+                    <p class="mt-3">The iOS version is currently unavailable.</p>
+                    <p class="read-more">Read more about the beta version</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How to Download Modal -->
+    <div class="modal fade" id="howToDownloadModal" tabindex="-1" role="dialog" aria-labelledby="howToDownloadModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="howToDownloadModalLabel">How to Download?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>For Android Devices:</strong></p>
+                    <ol>
+                        <li>Click on the "Download for Android" Button.</li>
+                        <li>The Download will commence automatically.</li>
+                        <li>Once the application has been successfully downloaded, click on "Install" to initiate the installation.</li>
+                        <li>If prompted, grant permission for installation from unknown sources by selecting "Yes" in the settings, and proceed with the installation process.</li>
+                        <li>If the download doesn't start automatically, You can <a href="https://bit.ly/SocialAppBeta">Click Here</a>.</li>
+                    </ol>
+                    <p><strong>For iOS Devices:</strong></p>
+                    <ol>
+                        <li>The iOS version is currently unavailable.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Modal -->
+    <div class="modal fade" id="featuresModal" tabindex="-1" role="dialog" aria-labelledby="featuresModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="featuresModalLabel">Features</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>Features Available in This Version:</h4>
+                    <ul>
+                        <li>Users can add news with embedded links and images.</li>
+                        <li>Users can post events for approvals.</li>
+                        <li>RSVP feature gives a better understanding of the participants of an event.</li>
+                        <li>Approvals, View Profiles, Manage Users.</li>
+                        <li>Birthday Celebrations, and many more.</li>
+                    </ul>
+                    <h4>Upcoming Features:</h4>
+                    <ul>
+                        <li>Chat and Internal Communication.</li>
+                        <li>Personal Invites for events.</li>
+                        <!-- Add more upcoming features as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

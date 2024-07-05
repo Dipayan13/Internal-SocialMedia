@@ -1,0 +1,11 @@
+{
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "intrs",
+            "database": "D:\\IBS_Intra_App_backend\\IBS_Intra_App_Basic_struc\\IBS_Intra_App\\Intra_app_sqlite.db"
+        }
+    ]
+}

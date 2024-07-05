@@ -1,0 +1,418 @@
+2024-02-08 10:16:49.504 [INF] Application Starting.
+2024-02-08 10:16:49.754 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-08 10:16:51.482 [INF] Now listening on: https://localhost:7036
+2024-02-08 10:16:51.487 [INF] Now listening on: http://localhost:5253
+2024-02-08 10:16:51.519 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-08 10:16:51.562 [INF] Hosting environment: Development
+2024-02-08 10:16:51.605 [INF] Content root path: D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\
+2024-02-08 10:16:54.407 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/index.html - -
+2024-02-08 10:16:55.401 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2024-02-08 10:16:55.406 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/index.html - - - 200 - text/html;charset=utf-8 1005.4837ms
+2024-02-08 10:16:55.402 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2024-02-08 10:16:55.645 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 243.1197ms
+2024-02-08 10:16:55.820 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 418.0447ms
+2024-02-08 10:16:55.951 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - -
+2024-02-08 10:16:56.807 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 855.4577ms
+2024-02-08 10:17:17.052 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=2b091fbc-c7f8-40ec-8423-0343f6b3d68b&reaction=false multipart/form-data;+boundary=--------------------------220008527414657639407781 496
+2024-02-08 10:17:17.987 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:17:18.059 [INF] Route matched with {action = "ReactToNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ReactToNews(System.String, Boolean) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:17:20.398 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:17:21.725 [INF] Executed DbCommand (43ms) [Parameters=[@__news_id_0='?' (Size = 36), @__id_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."Id", "n"."E_Id", "n"."N_Id", "n"."Reaction"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND ("n"."E_Id" = @__id_1)
+LIMIT 1
+2024-02-08 10:17:22.255 [ERR] Failed executing DbCommand (8ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 36), @p2='?' (Size = 36), @p3='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "NewsActivity" ("Id", "E_Id", "N_Id", "Reaction")
+VALUES (@p0, @p1, @p2, @p3);
+2024-02-08 10:17:22.430 [ERR] An exception occurred in the database while saving changes for context type 'IBS_Intra_App.DAL.Context.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-02-08 10:17:22.475 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-08 10:17:22.525 [INF] Executed action IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App) in 4413.8888ms
+2024-02-08 10:17:22.530 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:17:22.549 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=2b091fbc-c7f8-40ec-8423-0343f6b3d68b&reaction=false multipart/form-data;+boundary=--------------------------220008527414657639407781 496 - 200 - application/json;+charset=utf-8 5496.2369ms
+2024-02-08 10:17:49.581 [INF] Request starting HTTP/1.1 POST https://localhost:7036/App/login application/json 55
+2024-02-08 10:17:49.600 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App)'
+2024-02-08 10:17:49.612 [INF] Route matched with {action = "Login", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(IBS_Intra_App.BLL.DTO.LoginRequestModel) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:17:49.629 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:17:49.836 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 3)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DOB", "a"."DOJ", "a"."Eid", "a"."Email", "a"."EmailConfirmed", "a"."Emp_Name", "a"."Image", "a"."LinkedIn", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."Nick_Name", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PMail", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName", "a"."WMail", "a"."WhatsApp"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2024-02-08 10:17:49.976 [INF] User Found
+2024-02-08 10:17:50.193 [INF] Executed DbCommand (0ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2024-02-08 10:17:50.282 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2024-02-08 10:17:50.304 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2024-02-08 10:17:50.350 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE "a"."RoleId" = @__role_Id_0
+2024-02-08 10:17:50.382 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-02-08 10:17:50.385 [INF] User {user.UserName} logged in.
+2024-02-08 10:17:50.401 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2024-02-08 10:17:50.442 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2024-02-08 10:17:50.446 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType6`3[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-08 10:17:50.454 [INF] Executed action IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App) in 830.7665ms
+2024-02-08 10:17:50.456 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App)'
+2024-02-08 10:17:50.459 [INF] Request finished HTTP/1.1 POST https://localhost:7036/App/login application/json 55 - 200 - application/json;+charset=utf-8 878.2029ms
+2024-02-08 10:18:15.117 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=2b091fbc-c7f8-40ec-8423-0343f6b3d68b&reaction=false multipart/form-data;+boundary=--------------------------205290786102629456442503 496
+2024-02-08 10:18:15.122 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:18:15.124 [INF] Route matched with {action = "ReactToNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ReactToNews(System.String, Boolean) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:18:15.227 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:18:15.252 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36), @__id_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."Id", "n"."E_Id", "n"."N_Id", "n"."Reaction"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND ("n"."E_Id" = @__id_1)
+LIMIT 1
+2024-02-08 10:18:15.261 [ERR] Failed executing DbCommand (0ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 36), @p2='?' (Size = 36), @p3='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "NewsActivity" ("Id", "E_Id", "N_Id", "Reaction")
+VALUES (@p0, @p1, @p2, @p3);
+2024-02-08 10:18:15.272 [ERR] An exception occurred in the database while saving changes for context type 'IBS_Intra_App.DAL.Context.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-02-08 10:18:15.291 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-08 10:18:15.294 [INF] Executed action IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App) in 167.1553ms
+2024-02-08 10:18:15.295 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:18:15.297 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=2b091fbc-c7f8-40ec-8423-0343f6b3d68b&reaction=false multipart/form-data;+boundary=--------------------------205290786102629456442503 496 - 200 - application/json;+charset=utf-8 179.9517ms
+2024-02-08 10:18:33.983 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------287693665363560196626411 496
+2024-02-08 10:18:33.987 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:18:33.991 [INF] Route matched with {action = "NewsReactionList", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NewsReactionList(System.String) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:18:33.999 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:18:34.028 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND "n"."Reaction"
+2024-02-08 10:18:34.044 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND NOT ("n"."Reaction")
+2024-02-08 10:18:34.087 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE 0
+2024-02-08 10:18:34.107 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = 'd09d739d-157b-47d7-a255-63b30f39fb3e'
+2024-02-08 10:18:34.112 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[IBS_Intra_App.BLL.DTO.ReactionList, IBS_Intra_App, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-08 10:18:34.120 [INF] Executed action IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App) in 125.212ms
+2024-02-08 10:18:34.122 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:18:34.124 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------287693665363560196626411 496 - 200 - application/json;+charset=utf-8 142.8668ms
+2024-02-08 10:19:27.953 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=false multipart/form-data;+boundary=--------------------------345621407047838373522956 496
+2024-02-08 10:19:27.962 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:19:27.965 [INF] Route matched with {action = "ReactToNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ReactToNews(System.String, Boolean) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:19:27.972 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:19:27.980 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36), @__id_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."Id", "n"."E_Id", "n"."N_Id", "n"."Reaction"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND ("n"."E_Id" = @__id_1)
+LIMIT 1
+2024-02-08 10:19:28.026 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "NewsActivity"
+WHERE "Id" = @p0;
+SELECT changes();
+2024-02-08 10:19:28.061 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-08 10:19:28.063 [INF] Executed action IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App) in 95.0216ms
+2024-02-08 10:19:28.066 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:19:28.068 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=false multipart/form-data;+boundary=--------------------------345621407047838373522956 496 - 200 - application/json;+charset=utf-8 115.1417ms
+2024-02-08 10:19:38.796 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------153477106333301620293178 496
+2024-02-08 10:19:38.806 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:19:38.807 [INF] Route matched with {action = "NewsReactionList", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NewsReactionList(System.String) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:19:38.816 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:19:38.826 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND "n"."Reaction"
+2024-02-08 10:19:38.835 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND NOT ("n"."Reaction")
+2024-02-08 10:19:38.846 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE 0
+2024-02-08 10:19:38.864 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE 0
+2024-02-08 10:19:38.870 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[IBS_Intra_App.BLL.DTO.ReactionList, IBS_Intra_App, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-08 10:19:38.876 [INF] Executed action IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App) in 63.9542ms
+2024-02-08 10:19:38.877 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:19:38.879 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------153477106333301620293178 496 - 200 - application/json;+charset=utf-8 83.4335ms
+2024-02-08 10:19:51.430 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=false multipart/form-data;+boundary=--------------------------248674266273655134973710 496
+2024-02-08 10:19:51.436 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:19:51.437 [INF] Route matched with {action = "ReactToNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ReactToNews(System.String, Boolean) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:19:51.445 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:19:51.454 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36), @__id_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."Id", "n"."E_Id", "n"."N_Id", "n"."Reaction"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND ("n"."E_Id" = @__id_1)
+LIMIT 1
+2024-02-08 10:19:51.460 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 36), @p2='?' (Size = 36), @p3='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "NewsActivity" ("Id", "E_Id", "N_Id", "Reaction")
+VALUES (@p0, @p1, @p2, @p3);
+2024-02-08 10:19:51.474 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-08 10:19:51.476 [INF] Executed action IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App) in 34.6063ms
+2024-02-08 10:19:51.478 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:19:51.479 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=false multipart/form-data;+boundary=--------------------------248674266273655134973710 496 - 200 - application/json;+charset=utf-8 48.9341ms
+2024-02-08 10:20:03.250 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------589885453076473603012519 496
+2024-02-08 10:20:03.253 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:20:03.255 [INF] Route matched with {action = "NewsReactionList", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NewsReactionList(System.String) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:20:03.266 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:20:03.274 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND "n"."Reaction"
+2024-02-08 10:20:03.284 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND NOT ("n"."Reaction")
+2024-02-08 10:20:03.292 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE 0
+2024-02-08 10:20:03.300 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = 'd09d739d-157b-47d7-a255-63b30f39fb3e'
+2024-02-08 10:20:03.303 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[IBS_Intra_App.BLL.DTO.ReactionList, IBS_Intra_App, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-08 10:20:03.306 [INF] Executed action IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App) in 47.163ms
+2024-02-08 10:20:03.308 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:20:03.310 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------589885453076473603012519 496 - 200 - application/json;+charset=utf-8 59.6683ms
+2024-02-08 10:20:18.230 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------810929244658587921681059 496
+2024-02-08 10:20:18.248 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:20:18.250 [INF] Route matched with {action = "ReactToNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ReactToNews(System.String, Boolean) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:20:18.266 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:20:18.272 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36), @__id_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."Id", "n"."E_Id", "n"."N_Id", "n"."Reaction"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND ("n"."E_Id" = @__id_1)
+LIMIT 1
+2024-02-08 10:20:18.297 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (Size = 36), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "NewsActivity" SET "Reaction" = @p0
+WHERE "Id" = @p1;
+SELECT changes();
+2024-02-08 10:20:18.303 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-08 10:20:18.306 [INF] Executed action IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App) in 43.0521ms
+2024-02-08 10:20:18.309 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:20:18.311 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------810929244658587921681059 496 - 200 - application/json;+charset=utf-8 81.1134ms
+2024-02-08 10:20:28.800 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------974479822515590486207357 496
+2024-02-08 10:20:28.802 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:20:28.806 [INF] Route matched with {action = "NewsReactionList", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NewsReactionList(System.String) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:20:28.812 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:20:28.819 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND "n"."Reaction"
+2024-02-08 10:20:28.827 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND NOT ("n"."Reaction")
+2024-02-08 10:20:28.834 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = 'd09d739d-157b-47d7-a255-63b30f39fb3e'
+2024-02-08 10:20:28.842 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE 0
+2024-02-08 10:20:28.845 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[IBS_Intra_App.BLL.DTO.ReactionList, IBS_Intra_App, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-08 10:20:28.847 [INF] Executed action IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App) in 38.5055ms
+2024-02-08 10:20:28.850 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:20:28.852 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------974479822515590486207357 496 - 200 - application/json;+charset=utf-8 51.8776ms
+2024-02-08 10:20:42.403 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=false multipart/form-data;+boundary=--------------------------641823203659045524028924 496
+2024-02-08 10:20:42.406 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:20:42.408 [INF] Route matched with {action = "ReactToNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ReactToNews(System.String, Boolean) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:20:42.417 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:20:42.425 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36), @__id_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."Id", "n"."E_Id", "n"."N_Id", "n"."Reaction"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND ("n"."E_Id" = @__id_1)
+LIMIT 1
+2024-02-08 10:20:42.434 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (Size = 36), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "NewsActivity" SET "Reaction" = @p0
+WHERE "Id" = @p1;
+SELECT changes();
+2024-02-08 10:20:42.442 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-08 10:20:42.448 [INF] Executed action IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App) in 35.7607ms
+2024-02-08 10:20:42.450 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:20:42.451 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=false multipart/form-data;+boundary=--------------------------641823203659045524028924 496 - 200 - application/json;+charset=utf-8 47.6976ms
+2024-02-08 10:20:48.417 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------826554668434458460088403 496
+2024-02-08 10:20:48.428 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:20:48.433 [INF] Route matched with {action = "NewsReactionList", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NewsReactionList(System.String) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:20:48.444 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:20:48.454 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND "n"."Reaction"
+2024-02-08 10:20:48.461 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND NOT ("n"."Reaction")
+2024-02-08 10:20:48.472 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE 0
+2024-02-08 10:20:48.479 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = 'd09d739d-157b-47d7-a255-63b30f39fb3e'
+2024-02-08 10:20:48.486 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[IBS_Intra_App.BLL.DTO.ReactionList, IBS_Intra_App, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-08 10:20:48.488 [INF] Executed action IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App) in 47.9794ms
+2024-02-08 10:20:48.490 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:20:48.492 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------826554668434458460088403 496 - 200 - application/json;+charset=utf-8 74.9423ms
+2024-02-08 10:20:57.446 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------241662127461762080121724 496
+2024-02-08 10:20:57.452 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:20:57.459 [INF] Route matched with {action = "ReactToNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ReactToNews(System.String, Boolean) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:20:57.467 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:20:57.474 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36), @__id_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."Id", "n"."E_Id", "n"."N_Id", "n"."Reaction"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND ("n"."E_Id" = @__id_1)
+LIMIT 1
+2024-02-08 10:20:57.482 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (Size = 36), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "NewsActivity" SET "Reaction" = @p0
+WHERE "Id" = @p1;
+SELECT changes();
+2024-02-08 10:20:57.486 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-08 10:20:57.490 [INF] Executed action IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App) in 25.7386ms
+2024-02-08 10:20:57.491 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:20:57.493 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------241662127461762080121724 496 - 200 - application/json;+charset=utf-8 46.3002ms
+2024-02-08 10:21:05.336 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------860615342419512223324651 496
+2024-02-08 10:21:05.338 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:21:05.339 [INF] Route matched with {action = "NewsReactionList", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NewsReactionList(System.String) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:21:05.347 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:21:05.354 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND "n"."Reaction"
+2024-02-08 10:21:05.362 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND NOT ("n"."Reaction")
+2024-02-08 10:21:05.370 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."Id" = 'd09d739d-157b-47d7-a255-63b30f39fb3e'
+2024-02-08 10:21:05.377 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE 0
+2024-02-08 10:21:05.381 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[IBS_Intra_App.BLL.DTO.ReactionList, IBS_Intra_App, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-08 10:21:05.384 [INF] Executed action IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App) in 39.5213ms
+2024-02-08 10:21:05.385 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:21:05.387 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------860615342419512223324651 496 - 200 - application/json;+charset=utf-8 51.0359ms
+2024-02-08 10:21:15.958 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------583314118114313212266898 496
+2024-02-08 10:21:15.960 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:21:15.962 [INF] Route matched with {action = "ReactToNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ReactToNews(System.String, Boolean) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:21:15.969 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:21:15.979 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36), @__id_1='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."Id", "n"."E_Id", "n"."N_Id", "n"."Reaction"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND ("n"."E_Id" = @__id_1)
+LIMIT 1
+2024-02-08 10:21:15.985 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "NewsActivity"
+WHERE "Id" = @p0;
+SELECT changes();
+2024-02-08 10:21:15.992 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-08 10:21:15.994 [INF] Executed action IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App) in 28.3157ms
+2024-02-08 10:21:15.996 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-08 10:21:15.998 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------583314118114313212266898 496 - 200 - application/json;+charset=utf-8 40.3338ms
+2024-02-08 10:21:23.915 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------728683687663634289663554 496
+2024-02-08 10:21:23.923 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:21:23.925 [INF] Route matched with {action = "NewsReactionList", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult NewsReactionList(System.String) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-08 10:21:23.933 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-08 10:21:23.943 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND "n"."Reaction"
+2024-02-08 10:21:23.951 [INF] Executed DbCommand (0ms) [Parameters=[@__news_id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."E_Id"
+FROM "NewsActivity" AS "n"
+WHERE ("n"."N_Id" = @__news_id_0) AND NOT ("n"."Reaction")
+2024-02-08 10:21:23.958 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE 0
+2024-02-08 10:21:23.965 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Eid"
+FROM "AspNetUsers" AS "a"
+WHERE 0
+2024-02-08 10:21:23.969 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[IBS_Intra_App.BLL.DTO.ReactionList, IBS_Intra_App, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-02-08 10:21:23.971 [INF] Executed action IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App) in 42.7632ms
+2024-02-08 10:21:23.973 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.NewsReactionList (IBS_Intra_App)'
+2024-02-08 10:21:23.974 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/News_reaction_list?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f multipart/form-data;+boundary=--------------------------728683687663634289663554 496 - 200 - application/json;+charset=utf-8 59.0872ms

@@ -1,0 +1,366 @@
+2024-02-06 10:58:37.426 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 10:58:37.557 [INF] Shut down complete
+2024-02-06 11:35:17.337 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 11:35:17.485 [INF] Shut down complete
+2024-02-06 11:42:40.223 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 11:42:40.308 [INF] Shut down complete
+2024-02-06 11:59:02.373 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 11:59:02.477 [INF] Shut down complete
+2024-02-06 12:02:20.177 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 12:02:20.250 [INF] Shut down complete
+2024-02-06 12:36:03.102 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 12:36:03.256 [INF] Shut down complete
+2024-02-06 12:36:38.262 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 12:36:38.364 [INF] Shut down complete
+2024-02-06 12:45:49.618 [INF] Application Starting.
+2024-02-06 12:45:49.924 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-06 12:45:50.864 [INF] Now listening on: https://localhost:7036
+2024-02-06 12:45:50.967 [INF] Now listening on: http://localhost:5253
+2024-02-06 12:45:50.992 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-06 12:45:51.000 [INF] Hosting environment: Development
+2024-02-06 12:45:51.003 [INF] Content root path: D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\
+2024-02-06 12:45:54.699 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/index.html - -
+2024-02-06 12:45:56.232 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/index.html - - - 200 - text/html;charset=utf-8 1550.5248ms
+2024-02-06 12:45:56.237 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2024-02-06 12:45:56.244 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/swagger-ui.css - -
+2024-02-06 12:45:56.249 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/swagger-ui-bundle.js - -
+2024-02-06 12:45:56.257 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 19.8229ms
+2024-02-06 12:45:56.269 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/swagger-ui-standalone-preset.js - -
+2024-02-06 12:45:56.285 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2024-02-06 12:45:56.299 [INF] The file /swagger-ui-bundle.js was not modified
+2024-02-06 12:45:56.299 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2024-02-06 12:45:56.302 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 53.1293ms
+2024-02-06 12:45:56.304 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 34.7350ms
+2024-02-06 12:45:56.309 [INF] The file /swagger-ui.css was not modified
+2024-02-06 12:45:56.422 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/swagger-ui.css - - - 304 - text/css 177.9202ms
+2024-02-06 12:45:56.644 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 358.5508ms
+2024-02-06 12:45:56.857 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - -
+2024-02-06 12:45:56.858 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/favicon-32x32.png - -
+2024-02-06 12:45:57.794 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-02-06 12:45:57.804 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/favicon-32x32.png - - - 200 628 image/png 946.2397ms
+2024-02-06 12:45:57.810 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 952.5694ms
+2024-02-06 12:46:03.026 [INF] Request starting HTTP/1.1 POST https://localhost:7036/App/login application/json 55
+2024-02-06 12:46:03.269 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App)'
+2024-02-06 12:46:03.373 [INF] Route matched with {action = "Login", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(IBS_Intra_App.BLL.DTO.LoginRequestModel) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-06 12:46:07.186 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-06 12:46:09.178 [INF] Executed DbCommand (70ms) [Parameters=[@__normalizedUserName_0='?' (Size = 3)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DOB", "a"."DOJ", "a"."Eid", "a"."Email", "a"."EmailConfirmed", "a"."Emp_Name", "a"."Image", "a"."LinkedIn", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."Nick_Name", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PMail", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName", "a"."WMail", "a"."WhatsApp"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2024-02-06 12:46:09.588 [INF] User Found
+2024-02-06 12:46:09.890 [INF] Executed DbCommand (14ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2024-02-06 12:46:10.012 [INF] Executed DbCommand (19ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2024-02-06 12:46:10.032 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2024-02-06 12:46:10.077 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE "a"."RoleId" = @__role_Id_0
+2024-02-06 12:46:10.116 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-02-06 12:46:10.124 [INF] User {user.UserName} logged in.
+2024-02-06 12:46:10.151 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2024-02-06 12:46:10.670 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2024-02-06 12:46:10.699 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType6`3[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-06 12:46:10.788 [INF] Executed action IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App) in 7383.5651ms
+2024-02-06 12:46:10.990 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App)'
+2024-02-06 12:46:11.014 [INF] Request finished HTTP/1.1 POST https://localhost:7036/App/login application/json 55 - 200 - application/json;+charset=utf-8 7988.3858ms
+2024-02-06 12:48:43.887 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------658941091768113993306634 496
+2024-02-06 12:48:44.199 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-06 12:48:44.210 [INF] Route matched with {action = "ReactToNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ReactToNews(System.String, Boolean) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-06 12:48:44.218 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-06 12:48:45.083 [ERR] Failed executing DbCommand (47ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 36), @p2='?' (Size = 36), @p3='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "NewsActivity" ("Id", "E_Id", "N_Id", "Reaction")
+VALUES (@p0, @p1, @p2, @p3);
+2024-02-06 12:48:45.406 [ERR] An exception occurred in the database while saving changes for context type 'IBS_Intra_App.DAL.Context.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-02-06 12:48:45.499 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-06 12:48:45.504 [INF] Executed action IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App) in 1290.9631ms
+2024-02-06 12:48:45.505 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-06 12:48:45.510 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------658941091768113993306634 496 - 200 - application/json;+charset=utf-8 1623.5722ms
+2024-02-06 12:49:45.623 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------077055556382772948965674 496
+2024-02-06 12:49:45.628 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-06 12:49:45.630 [INF] Route matched with {action = "ReactToNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ReactToNews(System.String, Boolean) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-06 12:49:45.776 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-06 12:49:45.830 [ERR] Failed executing DbCommand (1ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 36), @p2='?' (Size = 36), @p3='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "NewsActivity" ("Id", "E_Id", "N_Id", "Reaction")
+VALUES (@p0, @p1, @p2, @p3);
+2024-02-06 12:49:45.844 [ERR] An exception occurred in the database while saving changes for context type 'IBS_Intra_App.DAL.Context.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-02-06 12:49:45.866 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-06 12:49:45.868 [INF] Executed action IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App) in 233.4942ms
+2024-02-06 12:49:45.870 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-06 12:49:45.872 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------077055556382772948965674 496 - 200 - application/json;+charset=utf-8 249.1484ms
+2024-02-06 12:50:12.754 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------346456904282150154825302 496
+2024-02-06 12:50:12.759 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-06 12:50:12.763 [INF] Route matched with {action = "ReactToNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ReactToNews(System.String, Boolean) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-06 12:50:12.769 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-06 12:50:12.782 [ERR] Failed executing DbCommand (1ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 36), @p2='?' (Size = 36), @p3='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "NewsActivity" ("Id", "E_Id", "N_Id", "Reaction")
+VALUES (@p0, @p1, @p2, @p3);
+2024-02-06 12:50:12.796 [ERR] An exception occurred in the database while saving changes for context type 'IBS_Intra_App.DAL.Context.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-02-06 12:50:12.817 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-06 12:50:12.820 [INF] Executed action IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App) in 53.4142ms
+2024-02-06 12:50:12.821 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-06 12:50:12.825 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------346456904282150154825302 496 - 200 - application/json;+charset=utf-8 71.2556ms
+2024-02-06 12:50:41.819 [INF] Request starting HTTP/2 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true - -
+2024-02-06 12:50:41.823 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (User|Executive|Admin)
+2024-02-06 12:50:41.848 [INF] AuthenticationScheme: Bearer was challenged.
+2024-02-06 12:50:41.852 [INF] Request finished HTTP/2 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true - - - 401 0 - 33.7546ms
+2024-02-06 12:59:38.742 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 12:59:38.974 [INF] Shut down complete
+2024-02-06 13:01:38.180 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 13:01:38.273 [INF] Shut down complete
+2024-02-06 13:02:44.981 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 13:02:45.089 [INF] Shut down complete
+2024-02-06 13:02:58.106 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 13:02:58.261 [INF] Shut down complete
+2024-02-06 13:03:17.510 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 13:03:17.610 [INF] Shut down complete
+2024-02-06 13:03:36.236 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 13:03:36.378 [INF] Shut down complete
+2024-02-06 13:05:48.283 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 13:05:48.488 [INF] Shut down complete
+2024-02-06 13:05:58.829 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 13:05:58.943 [INF] Shut down complete
+2024-02-06 13:06:12.525 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 13:06:12.648 [INF] Shut down complete
+2024-02-06 13:07:28.764 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 13:07:28.873 [INF] Shut down complete
+2024-02-06 13:07:54.707 [FTL] The Application failed to start.
+Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\Program.cs:line 235
+2024-02-06 13:07:54.843 [INF] Shut down complete
+2024-02-06 13:10:57.965 [INF] Application Starting.
+2024-02-06 13:10:58.280 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-06 13:10:59.155 [INF] Now listening on: https://localhost:7036
+2024-02-06 13:10:59.161 [INF] Now listening on: http://localhost:5253
+2024-02-06 13:10:59.189 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-06 13:10:59.198 [INF] Hosting environment: Development
+2024-02-06 13:10:59.202 [INF] Content root path: D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\
+2024-02-06 13:11:01.781 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/index.html - -
+2024-02-06 13:11:03.128 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/index.html - - - 200 - text/html;charset=utf-8 1359.6766ms
+2024-02-06 13:11:03.363 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2024-02-06 13:11:03.369 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2024-02-06 13:11:03.403 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 40.0193ms
+2024-02-06 13:11:03.742 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 372.6263ms
+2024-02-06 13:11:03.864 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - -
+2024-02-06 13:11:04.476 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 612.3860ms
+2024-02-06 13:11:41.717 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------790707149187176333916114 496
+2024-02-06 13:11:42.327 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-06 13:11:42.399 [INF] Route matched with {action = "ReactToNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ReactToNews(System.String, Boolean) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-06 13:11:44.587 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-06 13:11:45.397 [INF] Executed DbCommand (48ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 36), @p2='?' (Size = 36), @p3='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "NewsActivity" ("Id", "E_Id", "N_Id", "Reaction")
+VALUES (@p0, @p1, @p2, @p3);
+2024-02-06 13:11:45.477 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-02-06 13:11:45.512 [INF] Executed action IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App) in 3043.9476ms
+2024-02-06 13:11:45.515 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.ReactToNews (IBS_Intra_App)'
+2024-02-06 13:11:45.571 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/react_to_news?news_id=691cce3f-233a-452c-a46d-e9dde2ba572f&reaction=true multipart/form-data;+boundary=--------------------------790707149187176333916114 496 - 200 - application/json;+charset=utf-8 3853.8565ms

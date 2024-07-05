@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\IBS_Intra_App.props" />
+</Project>

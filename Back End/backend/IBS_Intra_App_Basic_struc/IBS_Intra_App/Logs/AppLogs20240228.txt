@@ -1,0 +1,51 @@
+2024-02-28 11:11:31.456 [INF] Application Starting.
+2024-02-28 11:11:31.728 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-02-28 11:11:33.896 [INF] Now listening on: https://localhost:7036
+2024-02-28 11:11:33.901 [INF] Now listening on: http://localhost:5253
+2024-02-28 11:11:33.919 [INF] Application started. Press Ctrl+C to shut down.
+2024-02-28 11:11:33.924 [INF] Hosting environment: Development
+2024-02-28 11:11:33.928 [INF] Content root path: D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\
+2024-02-28 11:11:38.249 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger - -
+2024-02-28 11:11:42.963 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger - - - 301 0 - 4736.1262ms
+2024-02-28 11:11:43.438 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/index.html - -
+2024-02-28 11:11:46.025 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/index.html - - - 200 - text/html;charset=utf-8 2586.8965ms
+2024-02-28 11:11:46.070 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/swagger-ui.css - -
+2024-02-28 11:11:46.070 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/swagger-ui-bundle.js - -
+2024-02-28 11:11:46.071 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/swagger-ui-standalone-preset.js - -
+2024-02-28 11:11:46.071 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2024-02-28 11:11:46.254 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2024-02-28 11:11:46.762 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 691.3465ms
+2024-02-28 11:11:46.814 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-02-28 11:11:46.814 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-02-28 11:11:46.849 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-02-28 11:11:46.859 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/swagger-ui.css - - - 200 144929 text/css 789.1359ms
+2024-02-28 11:11:46.853 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 781.9208ms
+2024-02-28 11:11:46.924 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 853.0931ms
+2024-02-28 11:11:47.021 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 771.8242ms
+2024-02-28 11:11:47.539 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - -
+2024-02-28 11:11:47.558 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/favicon-32x32.png - -
+2024-02-28 11:11:47.580 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-02-28 11:11:47.587 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/favicon-32x32.png - - - 200 628 image/png 28.4517ms
+2024-02-28 11:11:48.008 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 468.6521ms
+2024-02-28 11:11:55.300 [INF] Request starting HTTP/2 GET https://localhost:7036/App/downloadapk - -
+2024-02-28 11:11:55.476 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.GetHtmlPage (IBS_Intra_App)'
+2024-02-28 11:11:55.533 [INF] Route matched with {action = "GetHtmlPage", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHtmlPage() on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-28 11:11:57.800 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-28 11:11:57.830 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2024-02-28 11:11:57.865 [INF] Executed action IBS_Intra_App.Controllers.AppController.GetHtmlPage (IBS_Intra_App) in 2317.7567ms
+2024-02-28 11:11:57.884 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.GetHtmlPage (IBS_Intra_App)'
+2024-02-28 11:11:57.917 [INF] Request finished HTTP/2 GET https://localhost:7036/App/downloadapk - - - 200 7536 text/html 2616.8355ms
+2024-02-28 11:12:07.011 [INF] Request starting HTTP/2 GET https://localhost:7036/App/downloadapk - -
+2024-02-28 11:12:07.035 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.GetHtmlPage (IBS_Intra_App)'
+2024-02-28 11:12:07.036 [INF] Route matched with {action = "GetHtmlPage", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHtmlPage() on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2024-02-28 11:12:07.047 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2024-02-28 11:12:07.053 [INF] Executing ContentResult with HTTP Response ContentType of text/html
+2024-02-28 11:12:07.055 [INF] Executed action IBS_Intra_App.Controllers.AppController.GetHtmlPage (IBS_Intra_App) in 15.1902ms
+2024-02-28 11:12:07.057 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.GetHtmlPage (IBS_Intra_App)'
+2024-02-28 11:12:07.062 [INF] Request finished HTTP/2 GET https://localhost:7036/App/downloadapk - - - 200 - text/html 51.2227ms
+2024-02-28 11:12:07.212 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2024-02-28 11:12:07.213 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2024-02-28 11:12:07.219 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 7.2063ms
+2024-02-28 11:12:07.253 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.9792ms
+2024-02-28 11:12:09.252 [INF] Request starting HTTP/2 GET https://localhost:7036/favicon.ico - -
+2024-02-28 11:12:09.266 [INF] Request finished HTTP/2 GET https://localhost:7036/favicon.ico - - - 404 0 - 13.5922ms

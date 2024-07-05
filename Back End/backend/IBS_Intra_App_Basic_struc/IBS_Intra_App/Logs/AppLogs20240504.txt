@@ -1,0 +1,30 @@
+2024-05-04 07:14:47.675 [INF] Application Starting.
+2024-05-04 07:14:47.973 [INF] User profile is available. Using 'C:\Users\Athul Roy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-04 07:14:48.723 [INF] Now listening on: https://localhost:7036
+2024-05-04 07:14:48.727 [INF] Now listening on: http://localhost:5253
+2024-05-04 07:14:48.747 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-04 07:14:48.753 [INF] Hosting environment: Development
+2024-05-04 07:14:48.757 [INF] Content root path: D:\Files\D_Drive\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\
+2024-05-04 07:14:49.813 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/index.html - -
+2024-05-04 07:14:50.644 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2024-05-04 07:14:50.651 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2024-05-04 07:14:50.658 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/index.html - - - 200 - text/html;charset=utf-8 854.0855ms
+2024-05-04 07:14:50.667 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 16.7277ms
+2024-05-04 07:14:50.787 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 142.3247ms
+2024-05-04 07:14:51.028 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - -
+2024-05-04 07:14:51.318 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 289.8600ms
+2024-05-04 07:33:26.472 [INF] Application Starting.
+2024-05-04 07:33:26.650 [INF] User profile is available. Using 'C:\Users\Athul Roy\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-04 07:33:27.226 [INF] Now listening on: https://localhost:7036
+2024-05-04 07:33:27.232 [INF] Now listening on: http://localhost:5253
+2024-05-04 07:33:27.249 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-04 07:33:27.255 [INF] Hosting environment: Development
+2024-05-04 07:33:27.261 [INF] Content root path: D:\Files\D_Drive\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\
+2024-05-04 07:33:28.043 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/index.html - -
+2024-05-04 07:33:28.728 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/index.html - - - 200 - text/html;charset=utf-8 692.6928ms
+2024-05-04 07:33:28.734 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2024-05-04 07:33:28.736 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2024-05-04 07:33:28.753 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 13762 application/javascript;+charset=utf-8 19.1752ms
+2024-05-04 07:33:28.867 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 130.5384ms
+2024-05-04 07:33:28.943 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - -
+2024-05-04 07:33:29.177 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 234.0657ms

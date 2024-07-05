@@ -1,0 +1,139 @@
+2023-11-22 14:33:56.719 [INF] Application Starting.
+2023-11-22 14:33:57.018 [INF] User profile is available. Using 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-22 14:33:57.134 [INF] Creating key {30a89d1a-0543-4354-bb7b-68f18f2ef461} with creation date 2023-11-22 09:03:57Z, activation date 2023-11-22 09:03:57Z, and expiration date 2024-02-20 09:03:57Z.
+2023-11-22 14:33:57.193 [INF] Writing data to file 'C:\Users\DELL\AppData\Local\ASP.NET\DataProtection-Keys\key-30a89d1a-0543-4354-bb7b-68f18f2ef461.xml'.
+2023-11-22 14:33:58.316 [INF] Now listening on: https://localhost:7036
+2023-11-22 14:33:58.333 [INF] Now listening on: http://localhost:5253
+2023-11-22 14:33:58.390 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-22 14:33:58.461 [INF] Hosting environment: Development
+2023-11-22 14:33:58.466 [INF] Content root path: D:\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\IBS_Intra_App\
+2023-11-22 14:34:02.621 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger - -
+2023-11-22 14:34:02.992 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger - - - 301 0 - 381.4403ms
+2023-11-22 14:34:03.022 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/index.html - -
+2023-11-22 14:34:03.907 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/index.html - - - 200 - text/html;charset=utf-8 884.9276ms
+2023-11-22 14:34:03.911 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/swagger-ui.css - -
+2023-11-22 14:34:03.911 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/swagger-ui-bundle.js - -
+2023-11-22 14:34:03.912 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/swagger-ui-standalone-preset.js - -
+2023-11-22 14:34:03.912 [INF] Request starting HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - -
+2023-11-22 14:34:03.912 [INF] Request starting HTTP/2 GET https://localhost:7036/_vs/browserLink - -
+2023-11-22 14:34:03.928 [INF] Request finished HTTP/2 GET https://localhost:7036/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 16.3703ms
+2023-11-22 14:34:04.075 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-22 14:34:04.075 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-22 14:34:04.112 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-22 14:34:04.092 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/swagger-ui.css - - - 200 144929 text/css 180.7452ms
+2023-11-22 14:34:04.143 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 231.8877ms
+2023-11-22 14:34:04.141 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 229.5513ms
+2023-11-22 14:34:04.242 [INF] Request finished HTTP/2 GET https://localhost:7036/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 330.2156ms
+2023-11-22 14:34:04.499 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - -
+2023-11-22 14:34:04.574 [INF] Request starting HTTP/2 GET https://localhost:7036/swagger/favicon-32x32.png - -
+2023-11-22 14:34:04.626 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-11-22 14:34:04.632 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/favicon-32x32.png - - - 200 628 image/png 57.9729ms
+2023-11-22 14:34:04.909 [INF] Request finished HTTP/2 GET https://localhost:7036/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 409.4876ms
+2023-11-22 14:34:30.651 [INF] Request starting HTTP/1.1 POST https://localhost:7036/App/login
+ application/json 55
+2023-11-22 14:34:30.829 [INF] Request finished HTTP/1.1 POST https://localhost:7036/App/login
+ application/json 55 - 404 0 - 177.6977ms
+2023-11-22 14:34:37.860 [INF] Request starting HTTP/1.1 POST https://localhost:7036/App/login application/json 55
+2023-11-22 14:34:37.890 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App)'
+2023-11-22 14:34:37.967 [INF] Route matched with {action = "Login", controller = "App"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(IBS_Intra_App.BLL.DTO.LoginRequestModel) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2023-11-22 14:34:40.151 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2023-11-22 14:34:41.378 [INF] Executed DbCommand (49ms) [Parameters=[@__normalizedUserName_0='?' (Size = 3)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."AccessFailedCount", "a"."ConcurrencyStamp", "a"."DOB", "a"."DOJ", "a"."Eid", "a"."Email", "a"."EmailConfirmed", "a"."Emp_Name", "a"."Image", "a"."LinkedIn", "a"."LockoutEnabled", "a"."LockoutEnd", "a"."Nick_Name", "a"."NormalizedEmail", "a"."NormalizedUserName", "a"."PMail", "a"."PasswordHash", "a"."PhoneNumber", "a"."PhoneNumberConfirmed", "a"."SecurityStamp", "a"."TwoFactorEnabled", "a"."UserName", "a"."WMail", "a"."WhatsApp"
+FROM "AspNetUsers" AS "a"
+WHERE "a"."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2023-11-22 14:34:41.616 [INF] User Found
+2023-11-22 14:34:41.852 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ClaimType", "a"."ClaimValue", "a"."UserId"
+FROM "AspNetUserClaims" AS "a"
+WHERE "a"."UserId" = @__user_Id_0
+2023-11-22 14:34:41.923 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-11-22 14:34:41.936 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 5)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."Id", "a"."ConcurrencyStamp", "a"."Name", "a"."NormalizedName"
+FROM "AspNetRoles" AS "a"
+WHERE "a"."NormalizedName" = @__normalizedName_0
+LIMIT 1
+2023-11-22 14:34:41.995 [INF] Executed DbCommand (0ms) [Parameters=[@__role_Id_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a"."ClaimType", "a"."ClaimValue"
+FROM "AspNetRoleClaims" AS "a"
+WHERE "a"."RoleId" = @__role_Id_0
+2023-11-22 14:34:42.018 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-11-22 14:34:42.021 [INF] User {user.UserName} logged in.
+2023-11-22 14:34:42.030 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-11-22 14:34:42.284 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 36)], CommandType='"Text"', CommandTimeout='30']
+SELECT "a0"."Name"
+FROM "AspNetUserRoles" AS "a"
+INNER JOIN "AspNetRoles" AS "a0" ON "a"."RoleId" = "a0"."Id"
+WHERE "a"."UserId" = @__userId_0
+2023-11-22 14:34:42.296 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType6`3[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-22 14:34:42.332 [INF] Executed action IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App) in 4350.7743ms
+2023-11-22 14:34:42.335 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.Login (IBS_Intra_App)'
+2023-11-22 14:34:42.348 [INF] Request finished HTTP/1.1 POST https://localhost:7036/App/login application/json 55 - 200 - application/json;+charset=utf-8 4487.6127ms
+2023-11-22 14:35:24.327 [INF] Request starting HTTP/1.1 POST https://localhost:7036/App/add_news multipart/form-data;+boundary=--------------------------353389459247198379711078 495
+2023-11-22 14:35:24.456 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.AddNews (IBS_Intra_App)'
+2023-11-22 14:35:24.464 [INF] Route matched with {action = "AddNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddNews(IBS_Intra_App.BLL.DTO.NewsDTO) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2023-11-22 14:35:24.474 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2023-11-22 14:35:24.770 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 2), @p2='?' (Size = 36), @p3='?', @p4='?', @p5='?' (DbType = DateTime), @p6='?' (Size = 16)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "News" ("Id", "Description", "E_Id", "Image", "Link", "P_Date", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2023-11-22 14:35:24.814 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-22 14:35:24.817 [INF] Executed action IBS_Intra_App.Controllers.AppController.AddNews (IBS_Intra_App) in 349.7253ms
+2023-11-22 14:35:24.819 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.AddNews (IBS_Intra_App)'
+2023-11-22 14:35:24.821 [INF] Request finished HTTP/1.1 POST https://localhost:7036/App/add_news multipart/form-data;+boundary=--------------------------353389459247198379711078 495 - 200 - application/json;+charset=utf-8 494.3568ms
+2023-11-22 14:35:54.305 [INF] Request starting HTTP/1.1 POST https://localhost:7036/App/get_news multipart/form-data;+boundary=--------------------------183103766460470298279677 495
+2023-11-22 14:35:54.310 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-11-22 14:35:54.312 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-11-22 14:35:54.315 [INF] Request finished HTTP/1.1 POST https://localhost:7036/App/get_news multipart/form-data;+boundary=--------------------------183103766460470298279677 495 - 405 0 - 72.9260ms
+2023-11-22 14:35:58.671 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/get_news multipart/form-data;+boundary=--------------------------470827973331517100631839 495
+2023-11-22 14:35:58.681 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.GetNews (IBS_Intra_App)'
+2023-11-22 14:35:58.686 [INF] Route matched with {action = "GetNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNews(System.String) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2023-11-22 14:35:58.938 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2023-11-22 14:35:59.001 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-11-22 14:35:59.021 [INF] Executed action IBS_Intra_App.Controllers.AppController.GetNews (IBS_Intra_App) in 332.4437ms
+2023-11-22 14:35:59.023 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.GetNews (IBS_Intra_App)'
+2023-11-22 14:35:59.026 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/get_news multipart/form-data;+boundary=--------------------------470827973331517100631839 495 - 400 - application/problem+json;+charset=utf-8 354.2355ms
+2023-11-22 14:36:06.652 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/get_news?eid=No multipart/form-data;+boundary=--------------------------330016609030375654696930 495
+2023-11-22 14:36:06.654 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.GetNews (IBS_Intra_App)'
+2023-11-22 14:36:06.656 [INF] Route matched with {action = "GetNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNews(System.String) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2023-11-22 14:36:06.665 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2023-11-22 14:36:06.706 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."Id", "n"."Description", "n"."E_Id", "n"."Image", "n"."Link", "n"."P_Date", "n"."Title"
+FROM "News" AS "n"
+2023-11-22 14:36:06.714 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.Collections.Generic.List`1[[IBS_Intra_App.DAL.Models.News, IBS_Intra_App, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-22 14:36:06.733 [INF] Executed action IBS_Intra_App.Controllers.AppController.GetNews (IBS_Intra_App) in 71.9567ms
+2023-11-22 14:36:06.735 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.GetNews (IBS_Intra_App)'
+2023-11-22 14:36:06.736 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/get_news?eid=No multipart/form-data;+boundary=--------------------------330016609030375654696930 495 - 200 - application/json;+charset=utf-8 84.6602ms
+2023-11-22 14:50:22.729 [INF] Request starting HTTP/1.1 POST https://localhost:7036/App/add_news multipart/form-data;+boundary=--------------------------827282433507167490602169 496
+2023-11-22 14:50:22.734 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.AddNews (IBS_Intra_App)'
+2023-11-22 14:50:22.736 [INF] Route matched with {action = "AddNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddNews(IBS_Intra_App.BLL.DTO.NewsDTO) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2023-11-22 14:50:22.742 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2023-11-22 14:50:22.758 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 36), @p1='?' (Size = 2), @p2='?' (Size = 36), @p3='?', @p4='?', @p5='?' (DbType = DateTime), @p6='?' (Size = 17)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "News" ("Id", "Description", "E_Id", "Image", "Link", "P_Date", "Title")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2023-11-22 14:50:22.786 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-22 14:50:22.789 [INF] Executed action IBS_Intra_App.Controllers.AppController.AddNews (IBS_Intra_App) in 48.7405ms
+2023-11-22 14:50:22.791 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.AddNews (IBS_Intra_App)'
+2023-11-22 14:50:22.794 [INF] Request finished HTTP/1.1 POST https://localhost:7036/App/add_news multipart/form-data;+boundary=--------------------------827282433507167490602169 496 - 200 - application/json;+charset=utf-8 64.9206ms
+2023-11-22 14:50:28.506 [INF] Request starting HTTP/1.1 POST https://localhost:7036/App/get_news?eid=No multipart/form-data;+boundary=--------------------------957928209835413777689960 496
+2023-11-22 14:50:28.508 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-11-22 14:50:28.510 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-11-22 14:50:28.511 [INF] Request finished HTTP/1.1 POST https://localhost:7036/App/get_news?eid=No multipart/form-data;+boundary=--------------------------957928209835413777689960 496 - 405 0 - 5.2442ms
+2023-11-22 14:50:35.563 [INF] Request starting HTTP/1.1 GET https://localhost:7036/App/get_news?eid=No multipart/form-data;+boundary=--------------------------243789554834649291608084 496
+2023-11-22 14:50:35.567 [INF] Executing endpoint 'IBS_Intra_App.Controllers.AppController.GetNews (IBS_Intra_App)'
+2023-11-22 14:50:35.569 [INF] Route matched with {action = "GetNews", controller = "App"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetNews(System.String) on controller IBS_Intra_App.Controllers.AppController (IBS_Intra_App).
+2023-11-22 14:50:35.574 [INF] Entity Framework Core 6.0.21 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.19' with options: None
+2023-11-22 14:50:35.579 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "n"."Id", "n"."Description", "n"."E_Id", "n"."Image", "n"."Link", "n"."P_Date", "n"."Title"
+FROM "News" AS "n"
+2023-11-22 14:50:35.586 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.Collections.Generic.List`1[[IBS_Intra_App.DAL.Models.News, IBS_Intra_App, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-22 14:50:35.589 [INF] Executed action IBS_Intra_App.Controllers.AppController.GetNews (IBS_Intra_App) in 16.8865ms
+2023-11-22 14:50:35.590 [INF] Executed endpoint 'IBS_Intra_App.Controllers.AppController.GetNews (IBS_Intra_App)'
+2023-11-22 14:50:35.592 [INF] Request finished HTTP/1.1 GET https://localhost:7036/App/get_news?eid=No multipart/form-data;+boundary=--------------------------243789554834649291608084 496 - 200 - application/json;+charset=utf-8 28.8281ms

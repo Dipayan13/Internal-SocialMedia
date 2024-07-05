@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pymRXhzUq7aMjHzjzytu2BJ3gyWk6ulRDmEaV3fIKCQ=",
+  "Source": "IBS_Intra_App",
+  "BasePath": "_content/IBS_Intra_App",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

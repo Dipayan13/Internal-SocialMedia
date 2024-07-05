@@ -1,0 +1,7 @@
+D:\Files\D_Drive\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\TestProject1\bin\Debug\net6.0\CoverletSourceRootsMapping
+D:\Files\D_Drive\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\TestProject1\obj\Debug\net6.0\TestProject1.csproj.AssemblyReference.cache
+D:\Files\D_Drive\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\TestProject1\obj\Debug\net6.0\TestProject1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Files\D_Drive\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\TestProject1\obj\Debug\net6.0\TestProject1.AssemblyInfoInputs.cache
+D:\Files\D_Drive\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\TestProject1\obj\Debug\net6.0\TestProject1.AssemblyInfo.cs
+D:\Files\D_Drive\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\TestProject1\obj\Debug\net6.0\TestProject1.csproj.CoreCompileInputs.cache
+D:\Files\D_Drive\My_github\Project1\IBS_Intra_App_backend\IBS_Intra_App_Basic_struc\TestProject1\obj\Debug\net6.0\TestProject1.sourcelink.json
